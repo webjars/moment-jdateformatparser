@@ -11,7 +11,7 @@
   <packaging>jar</packaging>
   <groupId>org.webjars</groupId>
   <artifactId>moment-jdateformatparser</artifactId>
-  <version>1.2.1-SNAPSHOT</version>
+  <version>1.2.1</version>
   <name>Moment Java DateFormat Parser</name>
   <description>WebJar for Moment Java DateFormat Parser</description>
   <url>http://webjars.org</url>
@@ -49,7 +49,7 @@
     <url>http://github.com/webjars/moment-jdateformatparser</url>
     <connection>scm:git:https://github.com/webjars/moment-jdateformatparser.git</connection>
     <developerConnection>scm:git:https://github.com/webjars/moment-jdateformatparser.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>moment-jdateformatparser-1.2.1</tag>
   </scm>
   
   <dependencies>
@@ -86,16 +86,16 @@
             <goals><goal>run</goal></goals>
             <configuration>
               <target>
-                <echo message="download archive"/>
-                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip"/>
-                <echo message="unzip archive"/>
-                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
-                <echo message="moving resources"/>
+                <echo message="download archive" />
+                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip" />
+                <echo message="unzip archive" />
+                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                <echo message="moving resources" />
                 <move todir="${destDir}">
                   <fileset dir="${project.build.directory}/${project.artifactId}-${version.unsnapshot}">
-                    <include name="moment-jdateformatparser.*"/>
-                    <include name="LICENSE"/>
-                    <include name="README.md"/>
+                    <include name="moment-jdateformatparser.*" />
+                    <include name="LICENSE" />
+                    <include name="README.md" />
                   </fileset>
                 </move>
               </target>
