@@ -11,7 +11,7 @@
   <packaging>jar</packaging>
   <groupId>org.webjars</groupId>
   <artifactId>moment-jdateformatparser</artifactId>
-  <version>1.2.1</version>
+  <version>1.2.2-SNAPSHOT</version>
   <name>Moment Java DateFormat Parser</name>
   <description>WebJar for Moment Java DateFormat Parser</description>
   <url>http://webjars.org</url>
@@ -49,7 +49,7 @@
     <url>http://github.com/webjars/moment-jdateformatparser</url>
     <connection>scm:git:https://github.com/webjars/moment-jdateformatparser.git</connection>
     <developerConnection>scm:git:https://github.com/webjars/moment-jdateformatparser.git</developerConnection>
-    <tag>moment-jdateformatparser-1.2.1</tag>
+    <tag>HEAD</tag>
   </scm>
   
   <dependencies>
